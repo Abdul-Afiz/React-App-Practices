@@ -1,0 +1,87 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: rgb(69, 213, 156);
+
+  .App {
+    background: white;
+    height: 30rem;
+    width: 22rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    header {
+      background: rgb(20, 9, 43);
+      text-align: center;
+      color: white;
+      padding: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+    }
+
+    .input-field {
+      input {
+        width: 18rem;
+        padding: 0.6rem 1rem;
+        border: none;
+        outline: none;
+        border-top: 1px solid rgba(215, 215, 215, 0.804);
+      }
+      button {
+        border: none;
+        outline: none;
+        width: 4rem;
+        height: 2.25rem;
+        background: rgb(25, 1, 113);
+        font-size: 0.9rem;
+        color: white;
+        font-weight: 700;
+      }
+    }
+
+    .container {
+      padding: 0.7rem 0;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin: 1.2rem 0 0.5rem 0;
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        max-width: 12rem;
+
+        color: white;
+      }
+
+      .admin {
+        align-self: flex-start;
+        margin-left: 0.8rem;
+        padding: 0.6rem;
+        border-radius: 0 0.5rem 0.5rem 0.5rem;
+        background: rgb(6, 0, 128);
+      }
+
+      .client {
+        background: rgb(6, 0, 128);
+        align-self: flex-end;
+        margin-right: 0.8rem;
+        padding: 0.6rem;
+        border-radius: 0.5rem 0rem 0.5rem 0.5rem;
+      }
+    }
+  }
+}
