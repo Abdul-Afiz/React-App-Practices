@@ -1,0 +1,9 @@
+.container {
+  background-image: url("../public/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  height: 100vh;
+  max-height: 56.25rem;
+  width: 100%;
+  max-width: 90rem;
+  overflow: hidden;
+}
