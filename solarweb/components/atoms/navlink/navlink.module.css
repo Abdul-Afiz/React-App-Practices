@@ -1,0 +1,22 @@
+.border {
+  position: relative;
+}
+
+.border:active::before {
+  content: "";
+  height: 0.1875rem;
+  width: 100%;
+  background: white;
+  position: absolute;
+  bottom: -2.4rem;
+}
+
+.border:hover::before {
+  content: "";
+  height: 0.1875rem;
+  width: 100%;
+  opacity: 0.5;
+  background: white;
+  position: absolute;
+  bottom: -2.4rem;
+}

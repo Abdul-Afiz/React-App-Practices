@@ -1,0 +1,14 @@
+.nav {
+  position: relative;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  height: 0.0625rem;
+  width: 29.5625rem;
+  background: white;
+  left: 7rem;
+  opacity: 0.25;
+  z-index: 1;
+}
