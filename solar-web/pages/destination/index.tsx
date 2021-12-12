@@ -21,20 +21,6 @@ const Destination = ({ datas }: any) => {
       text2="Pick your destination"
     >
       <Wrapper>
-        <div className="tab">
-          {datas.map(({ name }: any, i: any) => (
-            <div className="planet" key={`planet-${i}`}>
-              <HeadText5
-                className={`planet-text ${i === index ? "active" : "border"}`}
-                fontweight="400"
-                onClick={() => setIndex(i)}
-              >
-                {name}
-              </HeadText5>
-            </div>
-          ))}
-        </div>
-
         <SectionWrapper>
           <div className="img">
             <Image
@@ -47,6 +33,21 @@ const Destination = ({ datas }: any) => {
             />
           </div>
           <div className="page">
+            <div className="tab">
+              {datas.map(({ name }: any, i: any) => (
+                <div className="planet" key={`planet-${i}`}>
+                  <HeadText5
+                    className={`planet-text ${
+                      i === index ? "active" : "border"
+                    }`}
+                    fontweight="400"
+                    onClick={() => setIndex(i)}
+                  >
+                    {name}
+                  </HeadText5>
+                </div>
+              ))}
+            </div>
             <HeadText my="1.75rem" className="main-text">
               {planet.name}
             </HeadText>

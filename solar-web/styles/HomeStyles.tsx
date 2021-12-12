@@ -41,11 +41,7 @@ export const HomeWrapper = styled.main`
     .headtext5 {
       font-size: 1.2rem;
     }
-    /* .text {
-      font-size: 1rem;
-      line-height: 1.5;
-      max-width: 24rem;
-    } */
+
     .home-button {
       width: 11rem;
       height: 11rem;
@@ -53,6 +49,28 @@ export const HomeWrapper = styled.main`
     }
     button:hover {
       box-shadow: 0px 0px 0px 40px #ffffff38;
+    }
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    .headtext {
+      font-size: 9.375rem;
+      margin: 1.5rem 0;
+      line-height: 120px;
+    }
+    .home-button {
+      width: 15.125rem;
+      height: 15.125rem;
+      font-size: 2rem;
+    }
+    .text {
+      margin: 0 auto;
+      padding: 0;
+      line-height: 1.75;
+      max-width: 27.75rem;
     }
   }
 `;

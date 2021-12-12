@@ -15,7 +15,7 @@ const Crew = ({ datas }: any) => {
       text2="Meet your crew"
     >
       <CrewWrapper>
-        <div>
+        <div className="content">
           <HeadText4 className="head-text" my="0.9375rem">
             {crew.role}
           </HeadText4>

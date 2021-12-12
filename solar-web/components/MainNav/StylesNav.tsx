@@ -44,11 +44,28 @@ export const NavWrapper = styled.nav`
       background: white;
       position: absolute;
       bottom: -2.4rem;
+      @media (max-width: 800px) {
+        width: 75%;
+        right: 0;
+      }
     }
 
     .pathId {
       font-weight: bold;
       margin-right: 0.75rem;
+    }
+  }
+  @media (max-width: 800px) {
+    background: #ffffff0a;
+    width: 28.125rem;
+    height: 6rem;
+    backdrop-filter: blur(0px);
+    .path {
+      column-gap: 0rem;
+    }
+    .pathId {
+      visibility: hidden;
+      margin-right: 0;
     }
   }
 `;

@@ -11,9 +11,6 @@ const pages = [
 
 const MainNav = () => {
   const router = useRouter();
-
-  // console.log(router);
-
   const path = router.pathname;
   return (
     <NavWrapper>

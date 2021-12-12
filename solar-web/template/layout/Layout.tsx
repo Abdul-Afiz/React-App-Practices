@@ -15,7 +15,7 @@ type IProps = {
 
 const Layout = ({ img, text1, text2, children, pr }: IProps) => {
   return (
-    <LayoutWrapper bg={img || "/assets/home/background-home-desktop.jpg"}>
+    <LayoutWrapper bg={img}>
       <div className="center">
         <NavWrapper>
           <div className="imgWrapper">

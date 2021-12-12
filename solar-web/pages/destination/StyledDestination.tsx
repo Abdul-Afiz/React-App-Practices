@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.main`
   .tab {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     color: white;
-    padding-right: 16.5rem;
 
     .active,
     .border {
@@ -32,20 +31,16 @@ export const Wrapper = styled.main`
     }
 
     .planet {
-      margin-left: 1rem;
-
-      .planet-text {
-        font-size: 1rem;
-      }
+      margin-right: 1rem;
+    }
+    .planet-text {
+      font-size: 1rem;
     }
   }
 
   @media (max-width: 1380px) {
     .header {
       margin: 1.5rem 4rem;
-    }
-    .tab {
-      padding-right: 9.5rem;
     }
   }
 `;
@@ -95,6 +90,38 @@ export const SectionWrapper = styled.section`
     }
     .line {
       margin: 1rem 0;
+    }
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding: 2rem 0;
+    .page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .img {
+      margin-bottom: 3rem;
+    }
+    .tab {
+      margin-bottom: 2rem;
+    }
+    .planet-text {
+      margin-right: 1.25rem;
+    }
+    .main-text {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      line-height: 5.73rem;
+    }
+    .normal-text {
+      max-width: 35.8125rem;
+      line-height: 1.75rem;
+    }
+    .line {
+      margin-top: 3.0625rem;
+      margin-bottom: 1.75rem;
     }
   }
 `;

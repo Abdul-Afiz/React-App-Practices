@@ -63,4 +63,29 @@ export const CrewWrapper = styled.main`
       height: 0.75rem;
     }
   }
+  @media (max-width: 800px) {
+    flex-direction: column;
+
+    .content {
+      text-align: center;
+      display: grid;
+      place-items: center;
+    }
+    .img {
+      width: 28.52rem;
+      height: 35rem;
+    }
+    .loader {
+      margin: 2.5rem 0;
+    }
+    .head-name {
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .normal-txt {
+      max-width: 28.625rem;
+      margin-bottom: 0;
+      line-height: 1.75rem;
+    }
+  }
 `;

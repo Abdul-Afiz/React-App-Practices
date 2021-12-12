@@ -14,6 +14,10 @@ import data from "../../store/data.json";
 const Technology = ({ datas }: any) => {
   const [index, setindex] = useState(0);
   const tech = datas[index];
+  window.addEventListener("resize", () => {
+    console.log(window.innerHeight, window.innerWidth);
+  });
+  // console.log(window);
   return (
     <Layout
       img="/assets/technology/background-technology-desktop.jpg"

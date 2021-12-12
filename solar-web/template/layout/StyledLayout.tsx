@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const LayoutWrapper = styled.main<{ bg: string }>`
   height: 100vh;
   overflow-y: hidden;
-  background: ${(props) => `url(${props.bg})` || "yellow"};
+  background: ${(props) =>
+    `url(${props.bg || "/assets/home/background-home-desktop.jpg"})`};
   background-size: cover;
   .center {
     margin: 0 auto;
@@ -16,6 +17,12 @@ export const LayoutWrapper = styled.main<{ bg: string }>`
     @media (max-width: 1380px) {
       margin-top: 2rem;
     }
+  }
+  @media (max-width: 800px) {
+    background: ${(props) =>
+      `url(${props.bg || "/assets/home/background-home-tablet.jpg"})`};
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 `;
 export const NavWrapper = styled.div`
@@ -65,6 +72,9 @@ export const NavWrapper = styled.div`
       width: 0;
     }
   }
+  @media (max-width: 800px) {
+    padding-top: 0;
+  }
 `;
 
 export const ChildrenWrapper = styled.main<{ pr?: string }>`
@@ -75,5 +85,8 @@ export const ChildrenWrapper = styled.main<{ pr?: string }>`
   }
   @media (max-width: 1200px) {
     padding: 0 2rem;
+  }
+  @media (max-width: 800px) {
+    padding: 2rem 0;
   }
 `;
