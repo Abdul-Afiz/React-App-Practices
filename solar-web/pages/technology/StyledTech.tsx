@@ -64,4 +64,32 @@ export const TechWraper = styled.main`
       height: 23rem;
     }
   }
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    .content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+    .head-name,
+    .subhead {
+      margin-bottom: 0rem;
+    }
+    .content-wrapper {
+      flex-direction: column;
+    }
+    .index-wrapper {
+      flex-direction: row;
+      column-gap: 1rem;
+      margin-bottom: 1rem;
+      .index {
+        margin: 0;
+      }
+    }
+    .normal-text {
+      max-width: 28.625rem;
+      line-height: 1.75rem;
+    }
+  }
 `;

@@ -14,10 +14,6 @@ import data from "../../store/data.json";
 const Technology = ({ datas }: any) => {
   const [index, setindex] = useState(0);
   const tech = datas[index];
-  window.addEventListener("resize", () => {
-    console.log(window.innerHeight, window.innerWidth);
-  });
-  // console.log(window);
   return (
     <Layout
       img="/assets/technology/background-technology-desktop.jpg"
@@ -39,7 +35,9 @@ const Technology = ({ datas }: any) => {
             ))}
           </div>
           <div className="content">
-            <Subheading3 my="0.6875rem">THE TERMINOLOGY…</Subheading3>
+            <Subheading3 my="0.6875rem" className="subhead">
+              THE TERMINOLOGY…
+            </Subheading3>
             <HeadText3 className="head-name"> {tech.name}</HeadText3>
             <NormalText className="normal-text" color="color">
               {tech.description}
