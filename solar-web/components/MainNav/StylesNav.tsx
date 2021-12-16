@@ -31,6 +31,7 @@ export const NavWrapper = styled.nav`
       background: white;
       position: absolute;
       bottom: -2.4rem;
+      left: 0;
     }
 
     .active {
@@ -65,7 +66,6 @@ export const NavWrapper = styled.nav`
     }
     .pathId {
       visibility: hidden;
-      margin-right: 0;
     }
   }
 `;

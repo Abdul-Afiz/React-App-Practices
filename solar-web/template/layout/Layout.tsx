@@ -3,10 +3,9 @@ import { ChildrenWrapper, LayoutWrapper, NavWrapper } from "./StyledLayout";
 import Image from "next/image";
 import logo from "../../public/assets/vector/logo.svg";
 import Header from "../../components/Header";
-import { ReactChild } from "react";
 
 type IProps = {
-  img?: any;
+  img: any;
   text1?: string;
   text2?: string;
   pr?: string;

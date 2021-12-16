@@ -4,16 +4,13 @@ import Image from "next/image";
 import { CrewWrapper } from "./StyledCrew";
 import data from "../../store/data.json";
 import { useState } from "react";
+import * as Img from "../../store/bgImg";
 
 const Crew = ({ datas }: any) => {
   const [index, setIndex] = useState(0);
   const crew = datas[index];
   return (
-    <Layout
-      img="/assets/crew/background-crew-desktop.jpg"
-      text1="02"
-      text2="Meet your crew"
-    >
+    <Layout img={Img.CrewImg} text1="02" text2="Meet your crew">
       <CrewWrapper>
         <div className="content">
           <HeadText4 className="head-text" my="0.9375rem">

@@ -67,6 +67,7 @@ export const TechWraper = styled.main`
   @media (max-width: 800px) {
     flex-direction: column-reverse;
     text-align: center;
+
     .content {
       display: flex;
       flex-direction: column;
@@ -88,7 +89,7 @@ export const TechWraper = styled.main`
       }
     }
     .normal-text {
-      max-width: 28.625rem;
+      max-width: 26.625rem;
       line-height: 1.75rem;
     }
   }

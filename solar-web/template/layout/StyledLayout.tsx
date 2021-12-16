@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export const LayoutWrapper = styled.main<{ bg: string }>`
+export const LayoutWrapper = styled.main<{
+  bg: { desktop?: string; tablet?: string; mobile?: string };
+}>`
   height: 100vh;
   overflow-y: hidden;
   background: ${(props) =>
-    `url(${props.bg || "/assets/home/background-home-desktop.jpg"})`};
+    `url(${props.bg.desktop || "/assets/home/background-home-desktop.jpg"})`};
   background-size: cover;
   .center {
     margin: 0 auto;
@@ -20,7 +22,7 @@ export const LayoutWrapper = styled.main<{ bg: string }>`
   }
   @media (max-width: 800px) {
     background: ${(props) =>
-      `url(${props.bg || "/assets/home/background-home-tablet.jpg"})`};
+      `url(${props.bg.tablet || "/assets/home/background-home-tablet.jpg"})`};
     background-size: cover;
     background-repeat: no-repeat;
   }

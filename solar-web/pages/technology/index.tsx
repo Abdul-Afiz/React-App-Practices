@@ -10,17 +10,13 @@ import {
 import Layout from "../../template/layout/Layout";
 import { TechWraper } from "./StyledTech";
 import data from "../../store/data.json";
+import * as Img from "../../store/bgImg";
 
 const Technology = ({ datas }: any) => {
   const [index, setindex] = useState(0);
   const tech = datas[index];
   return (
-    <Layout
-      img="/assets/technology/background-technology-desktop.jpg"
-      text1="03"
-      text2="space launch 101"
-      pr="0"
-    >
+    <Layout img={Img.TechImg} text1="03" text2="space launch 101" pr="0">
       <TechWraper>
         <div className="content-wrapper">
           <div className="index-wrapper">
