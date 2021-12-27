@@ -6,7 +6,7 @@ import {
   Subheading,
 } from "../../styles/Typography";
 import Layout from "../../template/layout/Layout";
-import { SectionWrapper, Wrapper } from "./StyledDestination";
+import { SectionWrapper, Wrapper } from "../../styles/StyledDestination";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import data from "../../store/data.json";

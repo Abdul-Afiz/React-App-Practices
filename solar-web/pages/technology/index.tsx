@@ -8,7 +8,7 @@ import {
   Subheading3,
 } from "../../styles/Typography";
 import Layout from "../../template/layout/Layout";
-import { TechWraper } from "./StyledTech";
+import { TechWraper } from "../../styles/StyledTech";
 import data from "../../store/data.json";
 import * as Img from "../../store/bgImg";
 import useScreenDimension from "../../config/util";

@@ -1,7 +1,7 @@
 import { HeadText4, HeadText3, NormalText } from "../../styles/Typography";
 import Layout from "../../template/layout/Layout";
 import Image from "next/image";
-import { CrewWrapper } from "./StyledCrew";
+import { CrewWrapper } from "../../styles/StyledCrew";
 import data from "../../store/data.json";
 import { useState } from "react";
 import * as Img from "../../store/bgImg";
