@@ -4,11 +4,9 @@ import { useRouter } from "next/router";
 import Layout from "../template/layout/Layout";
 import { HomeWrapper } from "../styles/HomeStyles";
 import { HeadText5, NormalText, HeadText } from "../styles/Typography";
-import ScreenDimension from "../config/util";
 const Home: NextPage = () => {
   const router = useRouter();
-  const dimension = ScreenDimension();
-  console.log(dimension);
+
   return (
     <Layout img="">
       <Head>

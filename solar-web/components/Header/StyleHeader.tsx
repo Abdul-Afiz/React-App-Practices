@@ -20,4 +20,15 @@ export const HeaderWrapper = styled.div`
       margin-right: 1rem;
     }
   }
+
+    @media (max-width: 575px) {
+      justify-content: center;
+    .no,
+    .header-txt {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .no{
+      margin-right: 1.125rem;
+    }
 `;

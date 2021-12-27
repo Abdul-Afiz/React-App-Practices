@@ -11,10 +11,13 @@ import Layout from "../../template/layout/Layout";
 import { TechWraper } from "./StyledTech";
 import data from "../../store/data.json";
 import * as Img from "../../store/bgImg";
+import useScreenDimension from "../../config/util";
 
 const Technology = ({ datas }: any) => {
   const [index, setindex] = useState(0);
   const tech = datas[index];
+  const [width, height] = useScreenDimension();
+  // console.log(width);
   return (
     <Layout img={Img.TechImg} text1="03" text2="space launch 101" pr="0">
       <TechWraper>
@@ -42,12 +45,10 @@ const Technology = ({ datas }: any) => {
         </div>
         <div className="img">
           <Image
-            src={tech.images.portrait}
+            src={width < 800 ? tech.images.landscape : tech.images.portrait}
             alt={tech.name}
-            layout="responsive"
+            layout="fill"
             objectFit="cover"
-            width={97}
-            height={100}
             priority
           />
         </div>

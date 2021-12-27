@@ -20,7 +20,7 @@ const Layout = ({ img, text1, text2, children, pr }: IProps) => {
           <div className="imgWrapper">
             <Image className="img" src={logo} alt="logo" />
           </div>
-          <MainNav />
+          <MainNav className={"main-nav"} />
         </NavWrapper>
         {text1 && text2 && (
           <div className="header">

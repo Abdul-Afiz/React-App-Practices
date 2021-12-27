@@ -124,4 +124,11 @@ export const SectionWrapper = styled.section`
       margin-bottom: 1.75rem;
     }
   }
+  @media (max-width: 575px) {
+    .img {
+      width: 170px;
+      height: 170px;
+      margin-bottom: 1rem;
+    }
+  }
 `;

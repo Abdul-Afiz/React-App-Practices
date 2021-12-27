@@ -16,13 +16,6 @@ const Destination = ({ datas }: any) => {
   const [index, setIndex] = useState(0);
   const planet = datas[index];
 
-  // useEffect(() => {
-  //   function handleResize() {
-  //     console.log("resized to: ", window.innerWidth, "x", window.innerHeight);
-  //   }
-  //   window.addEventListener("resize", handleResize);
-  // });
-
   return (
     <Layout img={Img.DestinationImg} text1="01" text2="Pick your destination">
       <Wrapper>

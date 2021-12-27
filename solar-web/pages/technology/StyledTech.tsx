@@ -4,6 +4,7 @@ export const TechWraper = styled.main`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* overflow-y: auto; */
   .content-wrapper {
     display: flex;
     align-items: center;
@@ -59,15 +60,23 @@ export const TechWraper = styled.main`
 
   @media (max-width: 1380px) {
     align-items: center;
+
     .img {
       width: 20rem;
-      height: 23rem;
+      height: 20rem;
     }
   }
   @media (max-width: 800px) {
     flex-direction: column-reverse;
     text-align: center;
-
+    .img {
+      width: 100%;
+      /* height: 19.375rem; */
+    }
+    .content-wrapper {
+      margin-top: 3.5rem;
+      flex-direction: column;
+    }
     .content {
       display: flex;
       flex-direction: column;
@@ -76,9 +85,6 @@ export const TechWraper = styled.main`
     .head-name,
     .subhead {
       margin-bottom: 0rem;
-    }
-    .content-wrapper {
-      flex-direction: column;
     }
     .index-wrapper {
       flex-direction: row;

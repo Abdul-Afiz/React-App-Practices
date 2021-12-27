@@ -1,5 +1,7 @@
 import { useRouter } from "next/router";
 import { NavWrapper } from "./StylesNav";
+import useScreenDimension from "../../config/util";
+import CloseIcon from "../vectors/CloseIcon";
 import Link from "next/link";
 
 const pages = [
@@ -9,20 +11,25 @@ const pages = [
   { id: "O3", description: "TECHNOLOGY", path: "/technology" },
 ];
 
-const MainNav = () => {
+const MainNav = ({ ...props }) => {
   const router = useRouter();
   const path = router.pathname;
+  const [width, height] = useScreenDimension();
   return (
     <NavWrapper>
+      <div className="close">{width <= 575 && <CloseIcon />}</div>
+
       <div className="path">
         {pages.map((page) => (
           <div
             className={path === page.path ? "active" : "border"}
             key={page.id}
           >
-            <span className="pathId">{page.id}</span>
             <Link href={page.path} passHref>
-              <span className="pathname">{page.description}</span>
+              <div>
+                <span className="pathId">{page.id}</span>
+                <span className="pathname">{page.description}</span>
+              </div>
             </Link>
           </div>
         ))}

@@ -59,7 +59,7 @@ export const HomeWrapper = styled.main`
     .headtext {
       font-size: 9.375rem;
       margin: 1.5rem 0;
-      line-height: 120px;
+      line-height: 7.5rem;
     }
     .home-button {
       width: 15.125rem;
@@ -71,6 +71,31 @@ export const HomeWrapper = styled.main`
       padding: 0;
       line-height: 1.75;
       max-width: 27.75rem;
+    }
+  }
+  @media (max-width: 575px) {
+    .headtext5 {
+      font-size: 1rem;
+      line-height: 1.2rem;
+      letter-spacing: 0.16875;
+    }
+
+    .headtext {
+      font-size: 5rem;
+      line-height: 6.25rem;
+      margin: 1rem 0;
+    }
+    .text {
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+      max-width: 20.4375rem;
+    }
+    .home-button {
+      width: 9.375rem;
+      height: 9.375rem;
+      font-size: 1.25rem;
+      letter-spacing: 0.078125rem;
+      line-height: 1.4325rem;
     }
   }
 `;

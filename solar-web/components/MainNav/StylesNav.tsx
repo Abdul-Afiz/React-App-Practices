@@ -45,10 +45,10 @@ export const NavWrapper = styled.nav`
       background: white;
       position: absolute;
       bottom: -2.4rem;
-      @media (max-width: 800px) {
-        width: 75%;
+      /* @media (max-width: 800px) {
+        width: 100%;
         right: 0;
-      }
+      } */
     }
 
     .pathId {
@@ -58,14 +58,41 @@ export const NavWrapper = styled.nav`
   }
   @media (max-width: 800px) {
     background: #ffffff0a;
-    width: 28.125rem;
+    width: 30rem;
     height: 6rem;
     backdrop-filter: blur(0px);
-    .path {
-      column-gap: 0rem;
+
+    .pathId {
+      display: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    background: rgba(255, 255, 255, 0.037);
+    backdrop-filter: blur(1rem);
+    width: 15.875rem;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    display: none;
+    .close {
+      align-self: flex-end;
+      margin-bottom: 4.95rem;
+      cursor: pointer;
+    }
+    .border::before,
+    .active::before {
+      display: none;
     }
     .pathId {
-      visibility: hidden;
+      display: inline-block;
+    }
+    .path {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
     }
   }
 `;
